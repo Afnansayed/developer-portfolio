@@ -50,9 +50,9 @@ nav a {
 /*header related style*/
 .header {
     background-color: #FFF8F3;
-    background-image: url('../images/header_bg.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png') ;
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -291,16 +291,41 @@ main section {
     font-weight: 400;
     line-height: 28px;
 }
+.social-link,a,img{
+    margin-top: 30px;
+    margin-right: 25px;
+}
 
+/* footer form style */
 .fot-form,
-input[type="text"],input[type="email"]
+input,
 textarea {
     display: block;
+    max-width: 450px;
     margin-bottom: 30px;
     color: #757575;
     font-size: 16px;
     font-weight: 400;
+    padding: 20px 30px;
     border-radius: 5px;
-    background:#FFF;
     border: 0;
+}
+
+input,
+textarea,
+{
+background: #FFF;
+}
+
+textarea {
+    width: 450px;
+    height: 30px;
+    resize: none;
+}
+
+.fot-form input[type=submit] {
+    color: var(--White-Color, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
